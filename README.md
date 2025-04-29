@@ -1,2 +1,2 @@
 # FitZone-GYM
-Successfully developed a complete web application for "FitZone Fitness Center" using HTML, CSS, JavaScript, PHP, and MySQL (WAMP Server).
+Successfully developed a complete web application for "FitZone Fitness Center" using HTML, CSS, JavaScript, PHP, and MySQL (WAMP Server). Key features include online registrations, user authentication, service inquiries, appointment management, and fitness-related blogs. The application was designed to deliver a seamless customer experience, dynamic service search functionality, and robust backend database integration with proper error handling.
