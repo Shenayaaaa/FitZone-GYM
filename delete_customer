@@ -1,0 +1,37 @@
+<?php
+session_start();
+
+// Check if the admin is logged in
+if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== true) {
+    header("Location: loginc.php");
+    exit;
+}
+
+include 'db_connect.php'; // Ensure that the database connection is included
+
+// Check if 'id' is passed via GET
+if (isset($_GET['id'])) {
+    $customer_id = $_GET['id'];
+
+    // Delete query
+    $delete_query = "DELETE FROM customers WHERE customer_id = ?";
+    $stmt = $conn->prepare($delete_query);
+    $stmt->bind_param("i", $customer_id);
+    $stmt->execute();
+
+    if ($stmt->affected_rows > 0) {
+        echo "Customer deleted successfully.";
+    } else {
+        echo "Error deleting customer.";
+    }
+
+    $stmt->close();
+} else {
+    echo "No customer ID provided.";
+}
+
+$conn->close();
+?>
+
+<!-- Redirect back to the customer management page after deletion -->
+<meta http-equiv="refresh" content="2;url=query_management.php">

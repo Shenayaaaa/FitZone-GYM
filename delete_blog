@@ -1,0 +1,31 @@
+<?php
+session_start();
+
+// Check if the admin is logged in
+if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== true) {
+    header("Location: loginc.php");
+    exit;
+}
+
+include 'db_connect.php';
+
+// Check if the post ID is set
+if (isset($_GET['id'])) {
+    $post_id = $_GET['id'];
+    
+    // Prepare and execute the delete query
+    $delete_query = "DELETE FROM blog_posts WHERE post_id = ?";
+    $stmt = $conn->prepare($delete_query);
+    $stmt->bind_param("i", $post_id);
+
+    if ($stmt->execute()) {
+        header("Location: blog_management.php");
+        exit;
+    } else {
+        echo "Error deleting post: " . $stmt->error;
+    }
+} else {
+    echo "No post ID specified!";
+    exit;
+}
+?>

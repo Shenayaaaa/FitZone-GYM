@@ -1,0 +1,134 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f6eeeb; /* Light background color */
+    color: #120e0e; /* Dark text color */
+}
+
+header {
+    background-color: #ffcc00; /* Yellow background */
+    padding: 10px 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #120e0e; /* Dark text */
+    text-decoration: none;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header ul li {
+    margin-left: 20px;
+}
+
+header ul li a {
+    color: #120e0e;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Section */
+section {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #ffffff; /* White background for the form */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #120e0e;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-size: 16px;
+    color: #120e0e;
+}
+
+form select,
+form input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form select:focus,
+form input:focus {
+    outline: none;
+    border-color: #ffcc00; /* Highlight border color */
+}
+
+form button {
+    padding: 12px 20px;
+    background-color: #ffcc00; /* Yellow background for the button */
+    border: none;
+    border-radius: 5px;
+    color: #120e0e; /* Dark text color */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #e6b800; /* Darker yellow on hover */
+}
+
+form button:active {
+    background-color: #cc9900; /* Even darker yellow when clicked */
+}
+
+form button:disabled {
+    background-color: #ccc; /* Disabled button color */
+    cursor: not-allowed;
+}
+
+/* Error Messages */
+.error-message {
+    color: red;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Success Message */
+.success-message {
+    color: green;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+}

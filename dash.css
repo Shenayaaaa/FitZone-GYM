@@ -1,0 +1,338 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ffcc00, #120e0e);
+    color: #f6eeeb;
+}
+
+header {
+    background-color: black;
+    padding: 15px 50px;
+    position: relative;
+    z-index: 10;
+}
+
+.navbar {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;   
+}
+
+.logo a {
+    text-decoration: none;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.fitzone {
+        font-size: 50px;
+        font-weight: bold;
+        color: #fff;
+        background: linear-gradient(to right, #ffcc00, #e20505);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        font-family: ' Arial, sans-serif';
+        margin-right: 5px;
+    }
+    
+.fitness {
+        font-size: 30px;
+        color: #fff;
+        background: linear-gradient(to right, #ffcc00, #ff6600);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        font-family: ' Arial, sans-serif';
+    }
+    
+    .navbar-links {
+        list-style-type: none;
+        display: flex;
+        gap: 15px;
+        scrollbar-width: thin;
+    }
+    
+    .navbar-links li {
+        margin-left: 20px;
+    }
+    
+    .navbar-links a {
+        justify-content: center; /* Center the links */
+        text-decoration: none;
+        color: #cc9c19;
+        font-weight: bold;
+        padding: 5px 10px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .navbar-links a:hover {
+        background-color: #f5f2e9;
+        border-radius: 5px;
+    }
+
+    /*admin dash board*/
+    .dashboardA {
+        max-width: 900px;
+        margin: 10px auto;
+        padding: 10px;
+        background-color: white; /* Fallback color */
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        
+        /* Background Image */
+        background-image: url('adimd.jpg'); /* Replace with your image path */
+        background-size: cover; /* Cover the entire section */
+        background-repeat: no-repeat; /* Prevent repeating the image */
+        background-position: center; /* Center the image */
+    }
+
+.dashboardA h2 {
+    text-align: center;
+    color: #f48b13;
+    font-size: 1.2rem;
+}
+
+.card {
+    background-color: #e9ecef;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.card {
+    background-color: #0b0808;
+    padding: 20px;
+    width: calc(50% - 10px);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #eead2c;
+}
+
+.card a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+/* user db*/
+.dashboardB {
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: white; /* Fallback color */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    
+    /* Background Image */
+    background-image: url('us2.jpg'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire section */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+    background-position: center; /* Subtle shadow */
+}
+
+.card4 {
+    
+    width: 300PX;
+    background-color: #0b0b0b; /* White background for cards */
+    border-radius: 8px; /* Rounded corners for cards */
+    padding: 10px; /* Padding inside cards */
+    margin-bottom: 15px; /* Space between cards */
+    transition: transform 0.3s,box-shadow 0.3s; /* Animation on hover */
+}
+
+.card4:hover {
+    transform: translateY(-5px); /* Raise card on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+.dashboard4 h3 {
+    margin-top: 0; /* Remove top margin from headings */
+}
+
+.card4 a {
+    display: inline-block; /* Block display for links */
+    margin-top: 10px; /* Add some space above links */
+    color: #d36434; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.card4 a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* staff db*/
+
+.staffDashboard {
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: white; /* Fallback color */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    
+    /* Background Image */
+    background-image: url('cusd.jpg'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire section */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+    background-position: center;  /* Subtle shadow */
+}
+
+.staffCard {
+    width: 300px;
+    background-color: #030303; /* White background for cards */
+    border-radius: 8px; /* Rounded corners for cards */
+    padding: 10px; /* Padding inside cards */
+    margin-bottom: 25px; /* Space between cards */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animation on hover */
+}
+
+.staffCard:hover {
+    transform: translateY(-5px); /* Raise card on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+.staffDashboard h3 {
+    margin-top: 0; /* Remove top margin from headings */
+}
+
+.staffCard a {
+    display: inline-block; /* Block display for links */
+    margin-top: 10px; /* Add some space above links */
+    color: #db5217; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.staffCard a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/*function*/
+section {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(to right, #dc710d, #120e0e);
+    border: 5px solid #0a0807;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    text-align: center;
+    color: #050404;
+    margin-bottom: 20px;
+    
+}
+
+table {
+    width: 100%;
+    margin-top: 10px;
+    border:3px solid #040505;
+}
+
+table th,
+table td {
+    padding: 12px 15px;
+    text-align: left;
+    
+    color: #120e0e;
+    background-color: #fff;
+}
+
+table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    color: #080505;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+table a {
+    color: #070707;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+table a:hover {
+    text-decoration: underline;
+    color: #0a0b0b;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #060606;
+}
+
+form input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #060505;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus {
+    border-color: #090b0d;
+}
+
+form button {
+    padding: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #040505;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #d9c813;
+}
